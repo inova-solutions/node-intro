@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        background-color: #f9f9f9;
+      }
+
+      header {
+        background: #f90;
+      }
+
+      h1,
+      article {
+        margin: 0 auto;
+        max-width: 800px;
+        box-sizing: border-box;
+      }
+
+      h1 {
+        padding: 0.5em 2rem;
+        text-transform: uppercase;
+        color: #fff;
+      }
+
+      .card {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding: 1rem 2rem;
+        border-radius: 0.25rem;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      li.card {
+        border-left: 0.5em solid #f90;
+      }
+
+      form {
+        display: flex;
+      }
+
+      input[type='text'] {
+        flex: 1 1 auto;
+        border: 2px solid #f90;
+        border-radius: 0.25rem 0 0 0.25rem;
+        border-right: 0;
+        padding: 0.2em 0.4em;
+        font-size: 1.2rem;
+      }
+
+      button {
+        flex: 0 0 auto;
+        background-color: #f90;
+        border: 2px solid #f90;
+        color: #fff;
+        text-transform: uppercase;
+        border: 0;
+        font-weight: bold;
+        padding: 0.8em 1em;
+        border-radius: 0 0.25rem 0.25rem 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: rgb(255, 172, 47);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Todo List</h1>
+      </header>
+
+      <article class="card">
+        <form action="add" method="POST">
+          <input type="text" name="todo" />
+          <button>Add</button>
+        </form>
+      </article>
+
+      <article>
+        <ul>
+          {{#todos}}
+          <li class="card">{{ . }}</li>
+          {{/todos}}
+        </ul>
+      </article>
+    </main>
+  </body>
+</html>
