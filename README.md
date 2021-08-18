@@ -43,24 +43,29 @@ Useful commands:
 
 ## 02 Differences to Browser JS
 
-- window does not exist
-- global does exist
-- some global objects like console or setTimeout/setInterval exist
-- process (infos about Node environment)
-- can access filesystem
+### A) Window / Global
 
-## 03 File System
+Since there is no DOM in the node environment there will also be no `window` object. This means that some objects which are present in the browser are not available in node (eg. window, document, alert, prompt, ...). Furthermore is the outmost this-context different from JS in browser, where it is the window object. In Node the this-context is the `global` object which works a bit like window. This also allowes to have `setTimeout` and `setInterval`, which would otherwise be included in the window object, in Node.
 
-- blocking or non-blocking (sync/async/promise)
-- readFile/readFileSync
-- writeFile/writeFileSync
+### B) Process
 
-## 04 Modules
+Another object which is exists in the Node environment is `process`. This object keeps information about the process that started that executes the JS code. This information includes for example arguments used when executing a JS file and has methods to stop/exit the process.
+
+- `process.argv` list of arguments used to execute this JS code
+- `process.exit()` method to stop the execution
+
+### C) File system access
+
+Unlike browser JS, Node is actually able to access things like the file system. This allows for very useful serverside execution of JS, but will also be a bit more dangerous than regular browser JS. Node provides a built-in support for file system access through the [`fs` package](https://nodejs.org/api/fs.html).
+
+Access to the file system can be done in either a blocking, or non-blocking manner. The `fs` package includes some synchronous methods, although an asynchronous approach is recommanded. Asynchronous methods can either have callbacks, eg. `writeFileAsync`, where a callback function must be provided, or can be used in promise-fashion, eg. `writeFile` from promise part of the package, where you can listen to a promise, or even use the modern async/await standard.
+
+## 03 Modules
 
 - CommonJS (required/module.exports)
 - ES Modules (import/export)
 
-## 05 NPM
+## 04 NPM
 
 - `npm init`
 - `npm install <...>`
@@ -68,7 +73,7 @@ Useful commands:
 - dependencies/devDependencies
 - node_modules
 
-## 06 Express
+## 05 Express
 
 Todo list project with express server.
 
@@ -80,3 +85,4 @@ Todo list project with express server.
 - https://v8.dev/
 - https://www.npmjs.com/
 - https://www.simform.com/blog/what-is-node-js/
+- https://nodejs.org/api/fs.html
