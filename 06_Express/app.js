@@ -1,7 +1,7 @@
 const express = require('express');
 const mustache = require('mustache-express');
-const fs = require('fs').promises;
-fs.exists = require('fs').existsSync;
+const fs = require('fs');
+const fsp = require('fs').promises;
 const app = express();
 const port = process.env.port || 3000;
 const storage = __dirname + '/data.json';
@@ -12,17 +12,19 @@ app.set('views', __dirname + '/pages');
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-async function getData() {
-  // return empty if file does not exist
-  if (!fs.exists(storage)) return [];
+function canAccessStorage() {
+  return fsp.access(storage, fs.constants.W_OK).then(_ => true).catch(_ => false);
+}
 
-  // read and return data
-  const data = await fs.readFile(storage, 'utf-8');
-  return data === '' ? [] : JSON.parse(data);
+async function getData() {
+  const defaultData = [];
+  return await canAccessStorage()
+    ? fsp.readFile(storage, 'utf-8').then(data => data !== '' ? JSON.parse(data) : defaultData)
+    : defaultData;
 }
 
 function writeData(data) {
-  return fs.writeFile(storage, JSON.stringify(data));
+  return fsp.writeFile(storage, JSON.stringify(data));
 }
 
 app.get('/', async (_req, res) => {
