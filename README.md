@@ -62,8 +62,36 @@ Access to the file system can be done in either a blocking, or non-blocking mann
 
 ## 03 Modules
 
-- CommonJS (required/module.exports)
-- ES Modules (import/export)
+For cleaner JS code people tend to move parts of code to their own modules, which then can be imported and used. In Node there are two major types of modules supported.
+
+### A) CommonJS (Node implementation)
+
+CommonJS modules are the original approach of modularization in Node. The module can export code via the `exports` variable in the following way:
+
+```js
+// module.js
+const foo = 'bar';
+modules.exports = foo;
+```
+
+```js
+// client.js
+const foo = require('module');
+```
+
+### B) ES Modules (native JavaScript)
+
+In the meantime the latest JavaScript versions (EcmaScript) provides a native way to create modules. Especially in TypeScript project this is the preferred way of managing modules. They are used in the following way:
+
+```js
+// module.js
+export const foo = 'bar';
+```
+
+```js
+// client.js
+import {foo} from 'module';
+```
 
 ## 04 NPM
 
@@ -86,3 +114,4 @@ Todo list project with express server.
 - https://www.npmjs.com/
 - https://www.simform.com/blog/what-is-node-js/
 - https://nodejs.org/api/fs.html
+- https://medium.com/computed-comparisons/commonjs-vs-amd-vs-requirejs-vs-es6-modules-2e814b114a0b
