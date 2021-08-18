@@ -95,11 +95,64 @@ import {foo} from 'module';
 
 ## 04 NPM
 
-- `npm init`
-- `npm install <...>`
-- `-g` flag
-- dependencies/devDependencies
-- node_modules
+### A) Create a NPM project
+
+You can install packages at any time, anywhere. But you will need to keep track of what packages you are using in your code, especially when collaborating with other teammates. When you create a new NPM project using `npm init` you will be prompted some question about that project. After answering, or skiping, those you will be presented with a `package.json` file. This file contains some meta information about the project.
+
+### B) Install a package in a project
+
+Whenever you install a package now you must specify if this package is a standard dependency or only a dev dependency (eg. only used for building the distribution files). You can specify this during installation with the `--save` or `--save-dev` flag.
+
+For example we want to use moment JS in our project and install it like this:
+
+`npm install --save moment`
+
+This will create:
+
+- the `node_modules` folder, if not yet present, with the moment package folder
+- the `package-lock.json` file, if not yet present
+
+In the `package.json` there will be a new entry of this package as a dependency.
+
+```json
+// package.json
+
+"dependencies": {
+    "moment": "^2.29.1"
+}
+```
+
+While in the `package-lock.json` there are some additional information about the exact version of the package.
+
+```json
+// package-lock.json
+
+"node_modules/moment": {
+    "version": "2.29.1",
+    "resolved": "http://proget.inova.ch/npm/dev/moment/-/moment-2.29.1.tgz",
+    "integrity": "sha512-kHmoybcPV8Sqy59DwNDY3Jefr64lK/by/da0ViFcuA4DH0vQg5Q6Ze5VimxkfQNSC+Mls/Kx53s7TjP1RhFEDQ==",
+    "license": "MIT",
+    "engines": {
+        "node": "*"
+    }
+}
+```
+
+### C) Install dependencies from an existing project
+
+To install all dependecies of a project you can use `npm install` without arguments in the project directory. It will install all dependencies specified in the `package.json`. This wil potentially re-generate the `package-lock.json` file with the installed versions. To make sure you have the same version of packages installed as your collaborators when setting up an existing project on your machine, you can use the `npm ci` command, which will install the exact packages listed in the `package-lock.json`. This command is also recommended for build pipelines.
+
+### D) Install packages globally
+
+Sometimes you will need to install a package globally. For example a package that provides a CLI, that should be accessible from anywhere on your machine. You can do so by providing the `-g` flag when installing a dependency.
+
+`npm install -g @angular/cli`
+
+### E) Package selection
+
+On the main registry [www.npmjs.com](https://www.npmjs.com/) are all sorts of packages listed ready for you to use. You can search for a package in the search bar, or get redirected from google to one of the packages detail page. On this page you will see the README.md file from github with instructions on how to use this package, the install command with the package name, plus some meta information. For selecting a package to use in production, it is important to check the weekly downloads and the version cycle/last published version (how often do new versions release). Below is a screenshot of the angular CLI package.
+
+![NPM Angular CLI Package](99_Resources/npm-angular-cli.png)
 
 ## 05 Express
 
