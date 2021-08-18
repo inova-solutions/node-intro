@@ -1,0 +1,166 @@
+<mxfile host="65bd71144e" scale="1" border="50">
+    <diagram id="cHvEv7hvVx5K6SOpkBC5" name="Overview">
+        <mxGraphModel dx="1273" dy="1120" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#ffffff" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="82" value="&lt;font style=&quot;font-size: 32px&quot;&gt;NVM&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=22;strokeWidth=3;align=left;verticalAlign=bottom;fillColor=none;labelPosition=center;verticalLabelPosition=top;fontStyle=1;fontColor=#CC0000;strokeColor=#CC0000;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="80" width="1560" height="880" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="group;fontSize=12;" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="78" y="140" width="719" height="780" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Node v16.2.0 / NPM v7.13.0&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#009900;fontColor=#009900;" parent="33" vertex="1">
+                    <mxGeometry width="720" height="780" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Monorepo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;fontColor=#0000FF;strokeColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="40" y="250" width="640" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="70" y="300" width="270" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Angular" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="120" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Kendo" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="240" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Dev Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="380" y="300" width="270" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="Webpack" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="430" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Kendo" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="550" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Global Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="40" y="60" width="640" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Angular CLI" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="120" y="90" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Some Backend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;fontColor=#0000FF;strokeColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="40" y="520" width="640" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="70" y="570" width="270" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Nest JS" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="120" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="TypeORM" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="240" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="Dev Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="380" y="570" width="270" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="Webpack" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="33" vertex="1">
+                    <mxGeometry x="430" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Angular CLI" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="120" y="90" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Angular" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="120" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="Kendo" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="240" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Webpack" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="430" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Kendo" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="550" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="Webpack" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="430" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="TypeORM" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="33" vertex="1">
+                    <mxGeometry x="240" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="group;fontSize=12;" parent="1" vertex="1" connectable="0">
+                    <mxGeometry x="838" y="140" width="719" height="780" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="&lt;font style=&quot;font-size: 26px&quot;&gt;Node v14.8.0 / NPM v6.14.7&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#009900;fontColor=#009900;" parent="34" vertex="1">
+                    <mxGeometry width="720" height="780" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Monorepo" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;fontColor=#0000FF;strokeColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="40" y="250" width="640" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="70" y="300" width="270" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="Angular" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="120" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="Kendo" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="240" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Dev Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="380" y="300" width="270" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="Webpack" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="430" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="42" value="Kendo" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="550" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="Global Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="40" y="60" width="640" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="Angular CLI" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="120" y="90" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="Some Backend" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;fontColor=#0000FF;strokeColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="40" y="520" width="640" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="70" y="570" width="270" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="Nest JS" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="120" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="48" value="TypeORM" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="240" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="Dev Dependencies" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeWidth=3;align=left;fontSize=22;fontStyle=1;labelPosition=center;verticalLabelPosition=top;verticalAlign=bottom;textDirection=ltr;horizontal=1;strokeColor=#000000;fontColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="380" y="570" width="270" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value="Webpack" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fillColor=#0000FF;fontColor=#0000FF;" parent="34" vertex="1">
+                    <mxGeometry x="430" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="Angular CLI" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="120" y="90" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="Angular" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="120" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="Kendo" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="240" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value="Webpack" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="430" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="Kendo" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="550" y="330" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="Webpack" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="430" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="TypeORM" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;shape=mxgraph.azure.cloud_service_package_file;fontSize=22;fontColor=#000000;fillColor=#000000;" parent="34" vertex="1">
+                    <mxGeometry x="240" y="600" width="42.5" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="mtrAeIXvqWgf6g6eQOHz-82" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;NVM (Node Version Manager)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#CC0000;align=center;fontColor=#F0F0F0;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1000" width="400" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="mtrAeIXvqWgf6g6eQOHz-83" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;Node / NPM (Node Package Manager)&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#009900;fontColor=#F0F0F0;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1060" width="400" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="mtrAeIXvqWgf6g6eQOHz-84" value="&lt;font style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;NPM Project with package.json&lt;/b&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;fillColor=#0000FF;fontColor=#F0F0F0;strokeColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="1120" width="400" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
