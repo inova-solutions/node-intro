@@ -13,11 +13,8 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 async function getData() {
-  // create file if it does not exist
-  if (!fs.exists(storage)) {
-    await fs.writeFile(storage, '');
-    return [];
-  }
+  // return empty if file does not exist
+  if (!fs.exists(storage)) return [];
 
   // read and return data
   const data = await fs.readFile(storage, 'utf-8');
