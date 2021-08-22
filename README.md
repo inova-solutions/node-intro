@@ -43,7 +43,7 @@ Useful commands:
 
 ## 02 Differences to Browser JS
 
-[📄 Task](02_JS_Differences/README.md)
+[📄 Task](02_JS_Differences/task.md) &nbsp; | &nbsp; [❓ Questions](02_JS_Differences/questions.md)
 
 ### A) Window / Global
 
