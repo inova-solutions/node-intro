@@ -43,6 +43,8 @@ Useful commands:
 
 ## 02 Differences to Browser JS
 
+[📄 Task](02_JS_Differences/README.md)
+
 ### A) Window / Global
 
 Since there is no DOM in the node environment there will also be no `window` object. This means that some objects which are present in the browser are not available in node (eg. window, document, alert, prompt, ...). Furthermore is the outmost this-context different from JS in browser, where it is the window object. In Node the this-context is the `global` object which works a bit like window. This also allowes to have `setTimeout` and `setInterval`, which would otherwise be included in the window object, in Node.
@@ -90,7 +92,7 @@ export const foo = 'bar';
 
 ```js
 // client.js
-import {foo} from 'module';
+import { foo } from 'module';
 ```
 
 ## 04 NPM
