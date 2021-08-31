@@ -81,7 +81,7 @@ CommonJS modules are the original approach of modularization in Node. The module
 ```js
 // module.js
 const foo = 'bar';
-modules.exports = foo;
+module.exports = foo;
 ```
 
 ```js
