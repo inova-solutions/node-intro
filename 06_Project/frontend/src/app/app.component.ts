@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
-import { finalize, switchMap } from 'rxjs/operators';
 import { NgForm } from '@angular/forms';
 import { TodoService } from './todo.service';
 
@@ -10,38 +8,49 @@ import { TodoService } from './todo.service';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent implements OnInit {
-  public todos = new BehaviorSubject<string[]>([]);
+  /**
+   * TASK:
+   * - initialize this property with a behavior subject
+   * - give it a default value of an empty array
+   * 
+   * the content of this behavior subject will be rendered in the DOM
+   */
+  public todos;
+
   public addInProgress = false;
 
   constructor(private todoService: TodoService) { }
 
   public ngOnInit(): void {
-    this.todoService.getTodos()
-      .subscribe(todos => this.todos.next(todos));
+    this.onReload();
   }
 
   public onAdd(form: NgForm): void {
     const { todo } = form.value;
-    this.addInProgress = true;
-    this.todoService.addTodo(todo)
-      .pipe(
-        switchMap(() => this.todoService.getTodos()),
-        finalize(() => this.addInProgress = false)
-      )
-      .subscribe(todos => {
-        form.resetForm();
-        this.todos.next(todos);
-      });
+
+    /**
+     * TASK:
+     * - set addInProgress to true
+     * - add todo then load all todos to show them + the new one in the DOM (hint: use RxJS switch map operator)
+     * - reset form (hint: form.resetForm())
+     * - set addInProgress to false, even if the API calls fail (hint: use RxJS finalize operator)
+     */
   }
 
   public onClear(): void {
-    this.todoService.clearTodos()
-      .subscribe(() => this.todos.next([]));
+    /**
+     * TASK:
+     * - clear all todos
+     * - update behavior subject
+     */
   }
 
   public onReload(): void {
-    this.todoService.getTodos()
-      .subscribe(todos => this.todos.next(todos));
+    /**
+     * TASK:
+     * - load all todos
+     * - update behavior subject
+     */
   }
 
 }
