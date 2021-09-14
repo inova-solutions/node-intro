@@ -1,27 +1,41 @@
-import { appendTodo, clearTodos, getTodos } from '../lib/todo.js';
 import express from 'express';
 import cors from 'cors';
 const app = express();
 
 // allow cross origin
 app.use(cors());
+
+// enable POST as json
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
-app.get('/todo', async function(_, res) {
-  const todos = await getTodos();
-  res.json(todos);
+/**
+ * TASK:
+ * - get all todos
+ * - respond all todos as JSON
+ */
+app.get('/todo', async function(req, res) {
+  // ...
 });
 
+/**
+ * TASK:
+ * - handle wrong input (send status 400)
+ * - append todo
+ * - send status 201 as confirmation
+ */
 app.post('/todo', async function(req, res) {
-  if (!req.body?.todo) return res.sendStatus(400);
-  await appendTodo(req.body.todo);
-  res.sendStatus(201);
+  // ...
 });
 
-app.delete('/todo', async function(_, res) {
-  await clearTodos();
-  res.sendStatus(204);
+/**
+ * TASK:
+ * - remove all todos
+ * - send status 204 as confirmation
+ */
+app.delete('/todo', async function(req, res) {
+  // ...
 });
 
+// start app
 app.listen(3000);
