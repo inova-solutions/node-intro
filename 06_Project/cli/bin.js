@@ -1,37 +1,24 @@
 #!/usr/bin/env node
 
-import { getTodos, appendTodo, clearTodos } from "../lib/todo.js";
+/**
+ * TASK:
+ * Write a CLI which handels the following commands:
+ * 
+ * todo | displays a list of all todo items
+ * todo --add <text> | adds a new todo item
+ * todo -a <text> | adds a new todo item
+ * todo --clear | removes all todos
+ * todo -c | removes all todos
+ */
 
-const [command, todo] = process.argv.slice(2);
+const [
+  /** @type {string} command name: could be --add, -a, --clear, -c */
+  command,
 
-const runProgram = async function() {
-  switch(command) {
-    case undefined: {
-      const todos = await getTodos();
-      if (!todos.length) return console.log('There are currently no todos');
-      todos.forEach(t => console.log('- ' + t));
-      return;
-    }
-      
-    case '--add':
-    case '-a': {
-      if (!todo) return console.error('Please specify a todo');
-      await appendTodo(todo);
-      return;
-    }
+  /** @type {string} text for a new todo */
+  todo
+] = process.argv.slice(2);
 
-    case '--clear':
-    case '-c': {
-      return clearTodos();
-    }
-
-    default:
-      console.table({
-        ['todo']: 'display todos',
-        ['todo --add <text>']: 'add new todo',
-        ['todo -a <text>']: 'add new todo',
-      });
-  }
-};
-
-runProgram();
+switch(command) {
+  // ...
+}
