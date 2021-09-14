@@ -1,0 +1,21 @@
+<h1>Todos</h1>
+
+<section>
+  <form #form="ngForm" (submit)="onAdd(form)">
+    <input type="text" name="todo" ngModel required [disabled]="addInProgress">
+    <button [disabled]="addInProgress">Add</button>
+  </form>
+
+  <button (click)="onClear()">Clear</button>
+  <button (click)="onReload()">Reload</button>
+</section>
+
+<main>
+  <ul *ngIf="(todos | async).length; else noTodos">
+    <li *ngFor="let todo of todos | async">{{todo}}</li>
+  </ul>
+</main>
+
+<ng-template #noTodos>
+  <p>There are currently no todos</p>
+</ng-template>
