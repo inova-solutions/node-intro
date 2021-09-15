@@ -11,11 +11,12 @@
  * todo -c | removes all todos
  */
 
+/**
+ * @type {string} obj.command command name: could be --add, -a, --clear, -c
+ * @type {string} obj.todo text for a new todo
+ */
 const [
-  /** @type {string} command name: could be --add, -a, --clear, -c */
   command,
-
-  /** @type {string} text for a new todo */
   todo
 ] = process.argv.slice(2);
 
