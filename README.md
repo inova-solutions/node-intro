@@ -163,7 +163,7 @@ Sometimes you will need to install a package globally. For example a package tha
 
 On the main registry [www.npmjs.com](https://www.npmjs.com/) are all sorts of packages listed ready for you to use. You can search for a package in the search bar, or get redirected from google to one of the packages detail page. On this page you will see the README.md file from github with instructions on how to use this package, the install command with the package name, plus some meta information. For selecting a package to use in production, it is important to check the weekly downloads and the version cycle/last published version (how often do new versions release). Below is a screenshot of the angular CLI package.
 
-![NPM Angular CLI Package](99_Resources/npm-angular-cli.png)
+![NPM Angular CLI Package](04_NPM/npm-angular-cli.png)
 
 ## 05 Express
 
