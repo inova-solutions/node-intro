@@ -7,6 +7,7 @@ This repository explains basic Node & NPM concepts.
 - [03 Modules](#03-modules)
 - [04 NPM](#04-npm)
 - [05 Express](#05-express)
+- [06 Todo Fullstack](#06-todo-fullstack)
 
 ## 01 Architecture
 
@@ -167,6 +168,16 @@ On the main registry [www.npmjs.com](https://www.npmjs.com/) are all sorts of pa
 ## 05 Express
 
 Todo list project with express server.
+
+## 06 Todo Fullstack
+
+[📄 Task](06_Project/task.md)
+
+The goal of the project is to create a full stack JavaScript/Node application, where you can manage todo items. You will use existing scaffolding to create:
+
+- Express server as backend
+- Angular app as frontend
+- Node CLI
 
 ## 99 Resources
 
