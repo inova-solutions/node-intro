@@ -167,7 +167,84 @@ On the main registry [www.npmjs.com](https://www.npmjs.com/) are all sorts of pa
 
 ## 05 Express
 
-Todo list project with express server.
+Express is the basis of Node backends. It creates a webserver and you will be able to define routes and add middleware.
+
+### A) Setup
+
+You can startup a new webserver by creating an `"app"` and listening to a port.
+
+```js
+const express = require('express')
+const app = express()
+const port = 3000;
+
+// define routes and middleware ...
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+});
+```
+
+### B) Routing
+
+You can create routes for your app by selecting a method (`GET`, `POST`, `PUT`, `DELETE`, ..), adding the route name (eg. `/home`) and creating a route handler which accepts `Request` and `Response` arguments.
+
+```js
+app.get('/home', function (req, res) {
+  // define what happens in this route
+});
+```
+
+### C) Respond
+
+You can respond in a route in various ways. You can send back content like text, html or json. You could also just send a status code.
+
+```js
+// send text
+res.send('Hello World');
+
+// send HTML
+res.send('<h1>Hello World</h1>');
+
+// render a view
+// this uses template engine middleware
+// https://expressjs.com/en/guide/using-template-engines.html
+res.render('home');
+
+// send a status
+res.sendStatus(400); // bad request
+```
+
+### D) Request
+
+You can also receive data from a request to use on the backend. For example you can get data from route parameters or from the request body.
+
+```js
+// get data from route parameters
+app.get('/user/:id', function(req, res) {
+    // access http://localhost:3000/user/1
+    console.log(req.params) // {id: 1}
+});
+
+// get data from request body
+app.post('/user', function(req, res) {
+    console.log(req.body); // {firstname: 'John', lastname: 'Smith'};
+
+    // you might need middleware to receive the request body
+    // eg. express.json(), express.urlencoded({extended: true})
+});
+```
+
+### E) Middleware
+
+To add more functionality to the express application you will use middleware. For example to render views or receive/parse the request body. Such middleware is commonly included using `app.use()` before your route definitions.
+
+```js
+app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+```
+
+More infos on [using](http://expressjs.com/en/guide/using-middleware.html) and [writing](http://expressjs.com/en/guide/writing-middleware.html) middleware in the express docs.
 
 ## 06 Todo Fullstack
 
