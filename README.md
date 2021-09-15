@@ -189,3 +189,5 @@ The goal of the project is to create a full stack JavaScript/Node application, w
 - https://www.simform.com/blog/what-is-node-js/
 - https://nodejs.org/api/fs.html
 - https://medium.com/computed-comparisons/commonjs-vs-amd-vs-requirejs-vs-es6-modules-2e814b114a0b
+- https://expressjs.com/
+- https://developer.okta.com/blog/2019/06/18/command-line-app-with-nodejs
