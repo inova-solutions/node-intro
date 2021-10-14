@@ -13,6 +13,7 @@ This repository explains basic Node & NPM concepts.
   - [📚 Codecademy](https://www.codecademy.com/learn/learn-express)
 - [06 Todo Fullstack](#06-todo-fullstack)
   - [📄 Task](06_Project/task.md)
+- [99 Resources](#99-resources)
 
 ## 01 Architecture
 
