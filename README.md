@@ -4,10 +4,15 @@ This repository explains basic Node & NPM concepts.
 
 - [01 Architecture](#01-architecture)
 - [02 Differences to Browser JS](#02-differences-to-browser-js)
+  - [📄 Task](02_JS_Differences/task.md)
+  - [❓ Questions](02_JS_Differences/questions.md)
 - [03 NPM](#03-npm)
 - [04 Modules](#04-modules)
+  - [📄 Task](04_Modules/task.md)
 - [05 Express](#05-express)
+  - [📚 Codecademy](https://www.codecademy.com/learn/learn-express)
 - [06 Todo Fullstack](#06-todo-fullstack)
+  - [📄 Task](06_Project/task.md)
 
 ## 01 Architecture
 
@@ -129,6 +134,7 @@ Sometimes you will need to install a package globally. For example a package tha
 On the main registry [www.npmjs.com](https://www.npmjs.com/) are all sorts of packages listed ready for you to use. You can search for a package in the search bar, or get redirected from google to one of the packages detail page. On this page you will see the README.md file from github with instructions on how to use this package, the install command with the package name, plus some meta information. For selecting a package to use in production, it is important to check the weekly downloads and the version cycle/last published version (how often do new versions release). Below is a screenshot of the angular CLI package.
 
 ![NPM Angular CLI Package](03_NPM/npm-angular-cli.png)
+
 ## 04 Modules
 
 [📄 Task](04_Modules/task.md)
