@@ -167,6 +167,8 @@ On the main registry [www.npmjs.com](https://www.npmjs.com/) are all sorts of pa
 
 ## 05 Express
 
+[📚 Codecademy](https://www.codecademy.com/learn/learn-express)
+
 Express is the basis of Node backends. It creates a webserver and you will be able to define routes and add middleware.
 
 ### A) Setup
