@@ -29,13 +29,13 @@ node calc.js 7 - 5
 - depending on the 2nd argument (+, -, ...) passed to the script, execute the correct operation
 
 ```js
-switch (arg1) {
+switch (arg2) {
   case '+':
-    add(arg2, arg3);
+    add(arg1, arg3);
     break;
 
   case '-':
-    subtract(arg2, arg3);
+    subtract(arg1, arg3);
     break;
 
   // ...
