@@ -26,7 +26,7 @@ Log the following object and examine them.
 Create a file with the following content:
 
 ```js
-console.log('process.argv');
+console.log(process.argv);
 ```
 
 Run it with the following commands:
