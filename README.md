@@ -154,7 +154,7 @@ module.exports = foo;
 
 ```js
 // client.js
-const foo = require('module');
+const foo = require('./module.js');
 ```
 
 ### B) ES Modules (native JavaScript)
@@ -168,8 +168,10 @@ export const foo = 'bar';
 
 ```js
 // client.js
-import { foo } from 'module';
+import { foo } from './module.js';
 ```
+
+**Attention:** to make it work you will need to add `"type": "module"` in the `package.json` or use the `.mjs` file extension. In the browser you will need the attribute `type="module"` on your script tag.
 
 ## 05 Express
 
