@@ -256,11 +256,25 @@ app.use(express.urlencoded({extended: true}))
 
 More infos on [using](http://expressjs.com/en/guide/using-middleware.html) and [writing](http://expressjs.com/en/guide/writing-middleware.html) middleware in the express docs.
 
-## 06 Todo Fullstack
+### First steps into the real world
 
+Now that you know the principals to work with Express, let's include express into your existing frontend project from previous learning blocks.
+
+The goal: extend your existing project by an express server and create one single get request for a function of your joice.
+Then test the functionality of the express endpoint via a webbrowser or a headless http client like Postman.
+
+**Important:** if you have already managed to write your project with TypeScript, instead of vanilla JS, integrate Express as TypeScript as well into your project.
+You are able to find many sources (about to use Express in TS and integrate the necessary types into your code) on the web.
+
+## 06 Todo Fullstack (optional)
+
+**Important:** do not start with this task without the agreement of your frontend instructor!
+
+Either build every endpoint of your existing frontend project from previous learning blocks with the Express backend form Chapter 5 (implement in TypeScript).
+If the project does not admit the asked extension with Express for what ever reason, you can use the flowing task description as an alternative (talk to your frontend instructor):
 [📄 Task](06_Project/task.md)
 
-The goal of the project is to create a full stack JavaScript/Node application, where you can manage todo items. You will use existing scaffolding to create:
+The goal of this alternative project would be to create a full stack JavaScript/Node application, where you can manage todo items. You will use existing scaffolding to create:
 
 - Express server as backend
 - Angular app as frontend
