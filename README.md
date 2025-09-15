@@ -175,11 +175,12 @@ import { foo } from './module.js';
 
 ## 05 Express
 
+### Basics
 [📚 Codecademy](https://www.codecademy.com/learn/learn-express)
 
 Express is the basis of Node backends. It creates a webserver and you will be able to define routes and add middleware.
 
-### A) Setup
+#### A) Setup
 
 You can startup a new webserver by creating an `"app"` and listening to a port.
 
@@ -195,7 +196,7 @@ app.listen(port, () => {
 });
 ```
 
-### B) Routing
+#### B) Routing
 
 You can create routes for your app by selecting a method (`GET`, `POST`, `PUT`, `DELETE`, ..), adding the route name (eg. `/home`) and creating a route handler which accepts `Request` and `Response` arguments.
 
@@ -205,7 +206,7 @@ app.get('/home', function (req, res) {
 });
 ```
 
-### C) Respond
+#### C) Respond
 
 You can respond in a route in various ways. You can send back content like text, html or json. You could also just send a status code.
 
@@ -225,7 +226,7 @@ res.render('home');
 res.sendStatus(400); // bad request
 ```
 
-### D) Request
+#### D) Request
 
 You can also receive data from a request to use on the backend. For example you can get data from route parameters or from the request body.
 
@@ -245,7 +246,7 @@ app.post('/user', function(req, res) {
 });
 ```
 
-### E) Middleware
+#### E) Middleware
 
 To add more functionality to the express application you will use middleware. For example to render views or receive/parse the request body. Such middleware is commonly included using `app.use()` before your route definitions.
 
@@ -256,7 +257,7 @@ app.use(express.urlencoded({extended: true}))
 
 More infos on [using](http://expressjs.com/en/guide/using-middleware.html) and [writing](http://expressjs.com/en/guide/writing-middleware.html) middleware in the express docs.
 
-### First steps into the real world
+### Task: First steps into the real world
 
 Now that you know the principals to work with Express, let's include express into your existing frontend project from previous learning blocks.
 
